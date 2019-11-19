@@ -15,6 +15,7 @@ App = {
         petTemplate.find('.pet-age').text(data[i].age);
         petTemplate.find('.pet-location').text(data[i].location);
         petTemplate.find('.btn-adopt').attr('data-id', data[i].id);
+        petTemplate.find('.btn-adopt').attr('data-price', data[i].price);
 
         petsRow.append(petTemplate.html());
       }
@@ -90,6 +91,7 @@ App = {
     event.preventDefault();
 
     var petId = parseInt($(event.target).data('id'));
+    var price = parseInt($(event.target).data('price')) * 1e18;
 
     var adoptionInstance;
 
@@ -104,7 +106,7 @@ App = {
         adoptionInstance = instance;
 
         // Execute adopt as a transaction by sending account
-        return adoptionInstance.adopt(petId, {from: account, value: 1e19, gas: 100000});
+        return adoptionInstance.adopt(petId, {from: account, value: price});
       }).then(function(result) {
         return App.markAdopted();
       }).catch(function(err) {
