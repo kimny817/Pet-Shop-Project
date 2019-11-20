@@ -42,7 +42,7 @@
     "age": 2,
     "breed": "French Bulldog",
     "location": "Gerber, South Dakota",
-    "price": 1
+    "price": 5
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "age": 3,
     "breed": "French Bulldog",
     "location": "Innsbrook, Illinois",
-    "price": 2
+    "price": 6
   },
   {
     "id": 6,
@@ -60,7 +60,7 @@
     "age": 3,
     "breed": "Golden Retriever",
     "location": "Soudan, Louisiana",
-    "price": 3
+    "price": 7
   },
   {
     "id": 7,
@@ -69,7 +69,7 @@
     "age": 3,
     "breed": "Golden Retriever",
     "location": "Jacksonwald, Palau",
-    "price": 4
+    "price": 8
   },
   {
     "id": 8,
@@ -115,7 +115,7 @@
     "age": 3,
     "breed": "French Bulldog",
     "location": "Kingstowne, Nevada",
-    "price": 1
+    "price": 5
   },
   {
     "id": 13,
@@ -124,7 +124,7 @@
     "age": 4,
     "breed": "Golden Retriever",
     "location": "Sultana, Massachusetts",
-    "price": 2
+    "price": 6
   },
   {
     "id": 14,
@@ -133,7 +133,7 @@
     "age": 2,
     "breed": "Golden Retriever",
     "location": "Broadlands, Oregon",
-    "price": 3
+    "price": 7
   },
   {
     "id": 15,
@@ -142,6 +142,6 @@
     "age": 2,
     "breed": "Golden Retriever",
     "location": "Dawn, Wisconsin",
-    "price": 4
+    "price": 8
   }
 ]
