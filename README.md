@@ -64,7 +64,7 @@ return adoptionInstance.adopt(petId, {from: account, value: price});
 
 ##### 3) html 
 In `src/index.html`, we define how our website layout will look like. Under displaying the location, we will display the price through the following code:
-```javascript
+```html
 <strong>Price</strong>: <span class="pet-price">1</span><br/><br/>
 ```
 
