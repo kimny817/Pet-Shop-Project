@@ -8,33 +8,33 @@
 ### Features
 The buyer has to pay the owner 10 ether + gas to adopt a pet. 
 
-#### Modifications to the code
-##### 1) Adoption contract
+### Modifications to the code
+#### 1) Adoption contract
 In `contracts/Adoption.sol`, the adopt function is modified to a payable function. So the header is modified as the following:
 ```javascript
 function adopt(uint petId) public payable returns (uint)
 
 ```
-##### 2) App
+#### 2) App
 In `src/app.js`, the `handle adoption` funtion sets the price of adoption. So the return statement is modified as the following:
 ```javascript
 return adoptionInstance.adopt(petId, {from: account, value: 1e19, gas: 100000});
 ```
 
-#### Difficulties
-##### 1) Transaction error
+### Difficulties
+#### 1) Transaction error
 `Transaction Failed! Error: [ethjs-rpc] rpc error with payload`
-Solution: Reset Metamask account and clear Chrome cash
+Solution: Reset Metamask account 
 
 ## 2. Differentiation Pet Pricing
 
 ![](gif/2.gif)
 
 ### Features
-The price of pets in the 1st column is 1 ether, pets in the 2nd column is 2 ether, and so on. 
+Each pet has a unique price ranging from 1 - 8 ether. 
 
 ### Modifications to the code
-##### 1) Pet Information
+#### 1) Pet Information
 In `src/pets.json`, I added a price variable. For example, a single pet would have the following data:
 ```json
     "id": 0,
