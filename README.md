@@ -46,7 +46,7 @@ In `src/pets.json`, I added a price variable. For example, a single pet would ha
     "price": 1
 ```
 
-##### 2) App
+#### 2) App
 In `src/app.js`, we want `data` to also include the price data. In the `init` function, when we read through the json data row by row, we should be taking the price data through the following code:
 ```javascript
 petTemplate.find('.pet-price').text(data[i].price);
@@ -62,7 +62,7 @@ We can charge the buyer the corresponding price by returning the following:
 return adoptionInstance.adopt(petId, {from: account, value: price});
 ```
 
-##### 3) html 
+#### 3) html 
 In `src/index.html`, we define how our website layout will look like. Under displaying the location, we will display the price through the following code:
 ```html
 <strong>Price</strong>: <span class="pet-price">1</span><br/><br/>
